@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 110vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 5px solid rgb(235, 98, 98);
+    width: 100%;
+    background-color: rgb(248, 117, 117);
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover{
+    background-color: brown;
+    color: white;
+}
+
+nav a.active {
+    background-color: brown;
+    color: white;
+}
+
+
+
+footer a, p {
+    font-size: 14px;
+    color: black;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    width: 80%;
+    max-width: 500px;
+    padding: 40px;
+    background-color: rgb(245, 245, 245);
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;;
+}
+
+.item p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+
+}
+
+.menu-icon{
+    height: 45px;
+}
+
+header {
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Impact',serif;
+}
+
+h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+h2{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+.profile-icon {
+    width: 80px;   /* Adjust size as needed */
+    height: 80px;  /* Optional: keeps it square */
+    object-fit: cover; /* Keeps the image nicely cropped */
+    border-radius: 50%; /* Optional: makes it circular */
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Ensures icons are on opposite sides */
+    align-items: center;
+    border-bottom: 5px solid rgb(235, 98, 98);
+    width: 100%;
+    background-color: rgb(248, 117, 117);
+    position: sticky;
+    top: 0;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+.user-description {
+    font-size: 16px;
+    color: #444;
+    margin-top: 10px;
+}
+
+.user-subscription {
+    font-size: 16px;
+    color: #2d7a2d;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.user-subscription-oval {
+    display: inline-block;
+    margin: 20px auto 0 auto;
+    padding: 8px 28px;
+    border-radius: 999px;
+    background: #f8bcbc;
+    color: #2d7a2d;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+header > .user-subscription-oval {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
